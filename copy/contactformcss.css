@@ -1,13 +1,9 @@
-body {
+#contact {
   height: auto;
   margin: 4rem 25vw;
   background-color: gainsboro;
 }
 
-label {
-  position: relative;
-  color: #646464;
-}
 
 input:not([type="submit"]):not([type="checkbox"]),
 textarea {
