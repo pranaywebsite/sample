@@ -1,17 +1,22 @@
-#contact {
-  height: auto;
-  margin: 4rem 25vw;
+.contact{
+  
   background-color: gainsboro;
-}
+  
 
+}
+.text-size{
+  font-size: 3vh;
+  padding-left: 2rem;
+}
 
 input:not([type="submit"]):not([type="checkbox"]),
 textarea {
-  padding: 0.3rem 0.8rem;
+  padding: .5rem 2rem;
   margin-bottom: 1rem;
-  width: 100%;
-  color: #646464;
-  border: 1px solid gainsboro;
+  width: 80%;
+  height: 5vh;
+  color: #000;
+  border: 2px solid gainsboro;
   background-color: gainsboro;
   transition: all 0.3s ease;
   box-shadow: 5px 5px 8px rgba(165, 165, 165, 0), -5px -5px 8px rgba(235, 235, 235, 0), inset 5px 5px 8px rgba(165, 165, 165, 0.8), inset -5px -5px 8px rgba(235, 235, 235, 0.8);
@@ -30,8 +35,9 @@ input:not([type="submit"]):not([type="checkbox"])::placeholder,
 textarea::placeholder {
   color: #646464;
   text-shadow: none;
-  transition: all 1s ease;
-  transition-delay: 1s;
+  font-size: 3vh;
+  transition: all .5s ease;
+  transition-delay: .3s;
 }
 input:not([type="submit"]):not([type="checkbox"]):focus,
 textarea:focus {
@@ -53,22 +59,26 @@ input:not([type="submit"]):not([type="checkbox"]) {
 
 textarea {
   margin-top: 1rem;
-  border-radius: 0.8rem;
-  height: 75px;
+  border-radius: 2rem;
+  height: 20vh;
+  width: 80%;
+
 }
 
 
 
 input[type="submit"] {
-  width: 100%;
-  margin: auto;
+  width: 80%;
+  height: 6rem;
+  margin: 1.5rem auto;
   padding: 1rem;
   border: none;
   border-radius: 10rem;
   background: gainsboro;
   color: #646464;
-  transition: all .3s ease;
-  box-shadow: 5px 5px 8px #b9b9b9, -5px -5px 8px #ebebeb;
+  font-size: 4rem;
+  transition: all .5s ease;
+  box-shadow: 15px 15px 18px #b9b9b9, -15px -15px 18px #ebebeb;
 }
 input[type="submit"]:hover {
   background: #ebebeb;
@@ -78,26 +88,20 @@ input[type="submit"]:focus {
   background: gainsboro;
   color: #00dc69;
   text-shadow: 0 0 2px #00dc69;
-  box-shadow: 5px 5px 8px rgba(165, 165, 165, 0), -5px -5px 8px rgba(235, 235, 235, 0), inset 5px 5px 8px rgba(165, 165, 165, 0.8), inset -5px -5px 8px rgba(235, 235, 235, 0.8);
+  box-shadow: 15px 15px 18px rgba(165, 165, 165, 0), -15px -15px 18px rgba(235, 235, 235, 0), inset 15px 15px 18px rgba(165, 165, 165, 0.8), inset -15px -15px 18px rgba(235, 235, 235, 0.8);
 }
 
-@media (max-width: 767px) {
-  body {
-    width: 70%;
-    margin: 3rem;
-  }
-}
 
  #reload{
-  width: 100%;
+  
   margin: auto;
-  padding: .4rem;
+  padding: 1rem;
   border: none;
   border-radius: 10rem;
   background: gainsboro;
   color: #646464;
   transition: all .3s ease;
-  box-shadow: 5px 5px 8px #b9b9b9, -5px -5px 8px #ebebeb;
+  box-shadow: 15px 15px 18px #b9b9b9, -15px -15px 18px #ebebeb;
 }
 
 
@@ -111,5 +115,11 @@ input[type="submit"]:focus {
   background: gainsboro;
   color: #00dc69;
   text-shadow: 0 0 2px #00dc69;
-  box-shadow: 5px 5px 8px rgba(165, 165, 165, 0), -5px -5px 8px rgba(235, 235, 235, 0), inset 5px 5px 8px rgba(165, 165, 165, 0.8), inset -5px -5px 8px rgba(235, 235, 235, 0.8);
+  box-shadow: 15px 15px 18px rgba(165, 165, 165, 0), -15px -15px 18px rgba(235, 235, 235, 0), inset 15px 15px 18px rgba(165, 165, 165, 0.8), inset -15px -15px 18px rgba(235, 235, 235, 0.8);
+}
+@media (max-width: 767px) {
+.contact{
+    width: 70%;
+    margin: 3rem;
+  }
 }
