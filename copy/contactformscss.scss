@@ -15,15 +15,12 @@ $white: rgba(245, 245, 245, 1);
               inset 5px 5px 8px rgba(165, 165, 165, 0.8),
               inset -5px -5px 8px rgba(235, 235, 235, 0.8); }
 
-body {
+#contact {
   height: auto;
   margin: 4rem 25vw;
   background-color: $mid;
 }
-label {
-  position: relative;
-  color: $dark;
-}
+
 
 input:not([type="submit"]):not([type="checkbox"]),
 textarea {
