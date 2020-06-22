@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="css/procss.css">
+    <link rel="stylesheet" href="contactformcss.css">
+    <link rel="stylesheet" href="contactformscss.scss">
     <!--icons--->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -86,22 +88,24 @@
 		<h2>Contact</h2>
 	</div>
 	<div class="contact-info">
-		<!---<form>
-			<input type="text" class="textField" placeholder="Full Name" required="">
-			<input type="text" class="textField" placeholder="Email Address" required=""> 
-			<textarea type="text" class="textField messageField" placeholder="Your Message"></textarea> 
-			<input type="submit" class="textField submitButton"  value="Send Message">
-
-		</form>-->
+		
+		
 		
 <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+
 <input name="skip_WhereToSend" type="hidden" value="pranupatu@gmail.com" />
+
 <input name="skip_SnapHostID" type="hidden" value="G4LCNEXSZ3FM" />
-<input name="skip_WhereToReturn" type="hidden" value="https://pranaywebsite.github.io/sample/copy/thanks.htm" />
-<input name="skip_Subject" type="hidden" value="Contact Us Form" />
+
+<input name="skip_WhereToReturn" type="hidden" value="https://github.com/pranaywebsite/sample/connect.html" />
+
+<input name="skip_Subject" type="hidden" value="Thank You Visiting My Website" />
 <input name="skip_ShowUsersIp" type="hidden" value="1" />
 <input name="skip_SendCopyToUser" type="hidden" value="1" />
+
+
 <script type="text/javascript">
+
 function ValidateForm(frm) {
 if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
 if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
@@ -118,40 +122,45 @@ var pos = src.indexOf('&rad=');
 if (pos >= 0) { src = src.substr(0, pos); }
 obj.src = src + '&rad=' + date.getTime();
 return false; }
+
 </script>
+
 <table border="0" cellpadding="5" cellspacing="0" width="600">
-<tr>
-<td><b>Name*:</b></td>
-<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
-</tr><tr>
-<td><b>Phone number:</b></td>
-<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
-</tr><tr>
-<td><b>Email address*:</b></td>
-<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
-</tr><tr>
-<td><b>Comments and questions*:</b></td>
-<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
-</tr><tr>
-<td colspan="2" align="center"> <br />
-<table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2" style="padding-bottom:18px;">
-<!-- Please check our ProCaptcha service which is ad-free:
-https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+
+
+<input name="Name" type="text" maxlength="60" placeholder="Full Name"  />
+
+
+<input name="PhoneNumber" type="text" maxlength="43" placeholder="Phone Number"  />
+
+
+<input name="FromEmailAddress" type="text" maxlength="60" placeholder="Email Address" />
+
+
+<textarea name="Comments" rows="7" cols="40" placeholder="Fill us in on any more details here..." ></textarea>
+
+
+<!---------------------don't touch this---------------->
+
 <a href="http://www.snaphost.com/captcha" alt="image captcha" title="image captcha" style="visibility: hidden;">
-image captcha</a></td></tr>
-<tr valign="top"><td> <i>Enter web form code*:</i>
-<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
-</td><td>
+image captcha</a>
+
+
+<!-------------------------------------------->
+
 <a href="https://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
-style="margin-left:20px;"
+style="align-items: center; justify-content: center; margin: .4rem auto  2rem 3rem;"
 src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=G4LCNEXSZ3FM&ImgType=2" /></a><br />
-<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
-</table> <br />
-* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<input name="skip_CaptchaCode" type="text" style="width:90px; " placeholder="Enter Captcha" maxlength="6" />
+
+
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');" style="text-decoration: none;" type="getElementById" id="reload"><span style="font-size:.8rem; ">reload image</span></a> </td>
+<br />
+
+
 <input name="skip_Submit" type="submit" value="Submit" />
-</td></tr>
-</table><br />
+
 </form>
 	 
 		
