@@ -1,0 +1,119 @@
+body {
+  height: auto;
+  margin: 4rem 25vw;
+  background-color: gainsboro;
+}
+
+label {
+  position: relative;
+  color: #646464;
+}
+
+input:not([type="submit"]):not([type="checkbox"]),
+textarea {
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  color: #646464;
+  border: 1px solid gainsboro;
+  background-color: gainsboro;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 8px rgba(165, 165, 165, 0), -5px -5px 8px rgba(235, 235, 235, 0), inset 5px 5px 8px rgba(165, 165, 165, 0.8), inset -5px -5px 8px rgba(235, 235, 235, 0.8);
+}
+input:not([type="submit"]):not([type="checkbox"]):valid,
+textarea:valid {
+  color: #00dc69;
+  text-shadow: 0 0 2px #f0f;
+}
+input:not([type="submit"]):not([type="checkbox"]):invalid,
+textarea:invalid {
+  color: #fe5567;
+  text-shadow: 0 0 2px #fe5567;
+}
+input:not([type="submit"]):not([type="checkbox"])::placeholder,
+textarea::placeholder {
+  color: #646464;
+  text-shadow: none;
+  transition: all 1s ease;
+  transition-delay: 1s;
+}
+input:not([type="submit"]):not([type="checkbox"]):focus,
+textarea:focus {
+  caret-color: #646464;
+  color: #646464;
+  text-shadow: 0 0 2px #bebebe;
+  outline: none;
+}
+input:not([type="submit"]):not([type="checkbox"]):focus::placeholder,
+textarea:focus::placeholder {
+  color: #646464;
+}
+
+input:not([type="submit"]):not([type="checkbox"]) {
+  border-radius: 10rem;
+  background: transparent;
+}
+
+
+textarea {
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+  height: 75px;
+}
+
+
+
+input[type="submit"] {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 10rem;
+  background: gainsboro;
+  color: #646464;
+  transition: all .3s ease;
+  box-shadow: 5px 5px 8px #b9b9b9, -5px -5px 8px #ebebeb;
+}
+input[type="submit"]:hover {
+  background: #ebebeb;
+}
+input[type="submit"]:focus {
+  outline: none;
+  background: gainsboro;
+  color: #00dc69;
+  text-shadow: 0 0 2px #00dc69;
+  box-shadow: 5px 5px 8px rgba(165, 165, 165, 0), -5px -5px 8px rgba(235, 235, 235, 0), inset 5px 5px 8px rgba(165, 165, 165, 0.8), inset -5px -5px 8px rgba(235, 235, 235, 0.8);
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 70%;
+    margin: 3rem;
+  }
+}
+
+ #reload{
+  width: 100%;
+  margin: auto;
+  padding: .4rem;
+  border: none;
+  border-radius: 10rem;
+  background: gainsboro;
+  color: #646464;
+  transition: all .3s ease;
+  box-shadow: 5px 5px 8px #b9b9b9, -5px -5px 8px #ebebeb;
+}
+
+
+ #reload:hover{
+  background: #ebebeb;
+}
+
+
+ #reload:focus{
+  outline: none;
+  background: gainsboro;
+  color: #00dc69;
+  text-shadow: 0 0 2px #00dc69;
+  box-shadow: 5px 5px 8px rgba(165, 165, 165, 0), -5px -5px 8px rgba(235, 235, 235, 0), inset 5px 5px 8px rgba(165, 165, 165, 0.8), inset -5px -5px 8px rgba(235, 235, 235, 0.8);
+}
