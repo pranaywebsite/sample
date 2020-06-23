@@ -1,0 +1,28 @@
+<footer class="footer-distributed animated-gif">
+
+		
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+
+					<a href="#">About</a>
+          <a href="#">Work</a> 
+					<a href="#">Contact</a>
+				</p>
+<li><a href="https://www.linkedin.com/in/pranay-patel-374257148"target="_blank"><i class="fab fa-linkedin " id="press-icons" aria-hidden="true"></i></a></li>
+<ul>
+				<li><a  href="mailto:pranay.pbt17@spt.pdpu.ac.in" target="_blank"><i class="far fa-envelope " id="press-icons" aria-hidden="true"></i></a>
+				</li>
+				<li><i class="fab fa-facebook-square  " id="press-icons" aria-hidden="true"></i>
+				</li>
+				<li><i class="fab fa-instagram " id="press-icons" aria-hidden="true"></i>
+				</li>		
+                <li><a href="https://github.com/pranaywebsite"target="_blank"><i class="fa fa-github-square " id="press-icons" aria-hidden="true" ></i></a>
+                </li>
+        </ul>
+				<p>Created by Pranay Patel  &copy; 2020</p>
+			</div>
+
+		</footer>
