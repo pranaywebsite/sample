@@ -1,0 +1,83 @@
+
+.downloadbtn{
+	position: relative;
+	display: inline-block;
+	padding: 2rem 2rem;
+	color: #2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 24px;
+	overflow: hidden;
+	transition: 1s;
+	display: flex;
+    justify-content: center;
+    align-items:  center;
+    text-decoration: none;
+    margin: 2rem;
+}
+.downloadbtn :hover{
+	color: #255784;
+	background:transparent;
+	box-shadow: 0 0 10px #e20000,0 0 40px #e20000,0 0 80px #e20000;
+	transition-delay: .5s;
+    
+}
+ .downloadbtn span  {
+    position: absolute;
+    display: block;
+    width: 50%;
+    size: 4rem;
+
+}
+ .downloadbtn span:nth-child(1){
+   top: 0;
+   left: -90%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(90deg, transparent,#2196f3)
+
+}
+.downloadbtn:hover span:nth-child(1){
+	left:100%;
+	transition: 1s;
+}
+.downloadbtn span:nth-child(3){
+   bottom: 0;
+   right: -90%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(270deg, transparent,#2196f3)
+
+}
+.downloadbtn:hover span:nth-child(3){
+	right: 100%;
+	transition: 1s;
+	transition-delay: .5s;
+}
+.downloadbtn span:nth-child(2){
+   top: -90%;
+   right:5rem;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(180deg, transparent,#2196f3)
+
+}
+.downloadbtn:hover span:nth-child(2){
+	top: 100%;
+	transition: 1s;
+	transition-delay: .25s;
+}
+.downloadbtn span:nth-child(4){
+   bottom: -90%;
+   left: 5rem;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(360deg, transparent,#2196f3)
+
+}
+.downloadbtn:hover span:nth-child(4){
+	bottom:  100%;
+	transition: 1s;
+	transition-delay: .75s;
+}
