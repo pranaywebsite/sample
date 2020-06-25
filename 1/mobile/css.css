@@ -384,7 +384,7 @@ background: #fff;
 }
 .contact-title{
     margin: 1.5rem 0;
-    font-size: 3rem; 
+    font-size: 4rem; 
     font-weight: 600;
     display: flex;
     justify-content:center;
@@ -403,12 +403,12 @@ background: #fff;
   display: flex;
   justify-content: center;
   margin: 4rem 0 1rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
   color:  #00dc69;
 }
 .media{
   
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 0 -4%;
   display: block;
@@ -439,7 +439,7 @@ background: #fff;
   display: inline-block;
 
   margin: 10px;
-  padding: .6rem;
+  padding: .7rem;
   border: none;
   border-radius: 10rem;
   background: gainsboro;
