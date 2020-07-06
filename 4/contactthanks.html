@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+    <html lang="en" style="width: 100vw; height: 100vh;">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  <!--ham -->
+     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+ <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<style type="text/css">
+   html,body{
+  background-color: #2A272A;
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+}
+  @media screen and (min-width:757px ){
+   
+        .wrapper {
+            width: 50%;             
+          position: absolute;
+          left: 48%;
+          top: 30%;
+            
+            transform: translate(-50%, -50%);
+            
+        }
+  }
+div.backBtn {
+  width: 150px;
+  left: 45%;
+  top: 50%;
+  transition: all 0.4s ease;
+  position: fixed;
+  cursor: pointer;
+  color:#fff;
+}
+
+span.line {
+  bottom: auto;
+  right: auto;
+  top: auto;
+  left: auto;
+  background-color: #f00;
+  border-radius: 10px;
+  width: 100%;
+  left: 0px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color .4s ease;
+}
+
+span.tLine {
+  top: -10px;
+}
+
+span.mLine {
+  top: 13px;
+  opacity: 0;
+}
+
+span.bLine {
+  top: 36px;
+}
+
+.label {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease;
+  font-size: 1em;
+}
+
+div.backBtn:hover span.label {
+  left: 25px
+}
+
+div.backBtn:hover span.line {
+  left: -10px;
+  height: 5px;
+  background-color: #00FF00;
+}
+
+div.backBtn:hover span.tLine {
+  width: 25px;
+  transform: rotate(-45deg);
+  left: -15px;
+  top: 6px;
+}
+
+div.backBtn:hover span.mLine {
+  opacity: 1;
+  width: 30px;
+}
+
+div.backBtn:hover span.bLine {
+  width: 25px;
+  transform: rotate(45deg);
+  left: -15px;
+  top: 20px;
+}
+
+
+  @media (max-width: 425px){
+       
+.mob{
+  color: white;
+  padding-left: 25%;
+  margin-top:40vh;
+}
+div.backBtn {
+  width: 150px;
+  left:32%;
+  top: 60vh;
+  color:#fff;
+  transition: all 0.4s ease;
+  justify-content:center;
+  cursor: pointer;
+  position:fixed;
+
+}
+
+span.line {
+  bottom: auto;
+  right: auto;
+  top: auto;
+  left: auto;
+  background-color: #f00;
+  border-radius: 10px;
+  width: 100%;
+  left: 0px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color 0.2s ease;
+}
+
+span.tLine {
+  top: -10px;
+}
+
+span.mLine {
+  top: 13px;
+  opacity: 0;
+}
+
+span.bLine {
+  top: 36px;
+}
+
+.label {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease;
+  font-size: 1em;
+}
+
+div.backBtn:hover span.label {
+  left: 25px
+}
+
+div.backBtn:hover span.line {
+  left: -10px;
+  height: 5px;
+  background-color:#00FF00;
+}
+
+div.backBtn:hover span.tLine {
+  width: 25px;
+  transform: rotate(-45deg);
+  left: -15px;
+  top: 6px;
+}
+
+div.backBtn:hover span.mLine {
+  opacity: 1;
+  width: 30px;
+}
+
+div.backBtn:hover span.bLine {
+  width: 25px;
+  transform: rotate(45deg);
+  left: -15px;
+  top: 20px;
+}
+
+
+ div.wrapper{
+        color: #2A272A;
+          visibility: hidden;
+        display: none;
+            }
+    }         
+} 
+
+</style>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 1300 399">
+            <defs>
+              <style>
+                  @media screen and (min-width:757px ){
+
+                .cls-1 {
+                  fill: #FAF8FF;
+                  stroke:none;
+                  stroke-width: 2px;
+                  font-size: 387px;
+                  font-family: Gabriola;
+                  stroke-dasharray: 1360;
+                animation-iteration-count: 1;
+                animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
+                }
+
+                @keyframes csvg {
+                    0% {
+                        stroke: #fff;
+                        stroke-width: 2px;
+                        opacity: 0;
+                        fill: none;
+                        stroke-dasharray: 0;
+                    }
+                    30% {
+                        stroke: #fff;
+                        stroke-width: 2px;
+                        opacity: 10;
+                        fill: none;
+                        /* stroke-dasharray: 1360; */
+                    }
+                    80% {
+                        stroke: #fff;
+                        stroke-width: 2px;
+                        fill: rgba(255, 255, 255, 0);
+                    }
+                    100% {
+                        opacity: 10;
+                        fill: #FFE7FF;
+                        stroke-dasharray: 1360;
+                        outline: none;
+                        stroke: none;
+                    }
+                }
+}
+     </style>
+            </defs>
+            <text class="cls-1 col-xs-6 col-md-6" transform="translate(6 271)"><tspan class="x" x="0" y="0">Thank You</tspan></text>
+          </svg>
+
+    </div>
+<div class="mob">
+  <h1 >Thank You</h1>
+  </div><div class="backBtn">
+      <span class="line tLine"></span>
+      <span class="line mLine"></span>
+      <span class="label">Back to Portfolio</span>
+      <span class="line bLine"></span>
+	</div>
+
+</body>
+</html>
