@@ -11,9 +11,15 @@
       width = window.innerWidth,
       height = document.body.offsetHeight;
 
-  var x =screen.height;
-  (height < (x+600) )? height = (x+600) : height;
+  var x =screen.width;
 
+if (x<376+"px") {
+ (height < (x+1000) )? height = (x-1000) : height;
+} 
+ else {
+
+  (height < (x-300) )? height = (x-300) : height;
+}
 
    background.width = width;
   background.height = height;
