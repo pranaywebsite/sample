@@ -1,0 +1,140 @@
+body, html {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+canvas {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 9;
+}
+
+
+.scroll-left {
+  overflow: hidden;
+  height: 30vh; 
+  position: relative;
+  color: #fff;
+  width:40%;
+  left: 30%;
+  top:15vh;
+  font-size: 3.5rem;
+  z-index: 99999;
+}
+.scroll-left p {
+  position: absolute;
+  white-space:nowrap;
+  margin: 0;
+  text-align: left;
+  /* Apply animation to this element */ 
+  -moz-animation: scroll-left 50s linear infinite;
+  -webkit-animation: scroll-left 50s linear infinite;
+  animation: scroll-left 50s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+  0%   { 
+  -moz-transform: translateX(100%); /* Browser bug fix */
+  -webkit-transform: translateX(100%); /* Browser bug fix */
+  transform: translateX(200px);         
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Browser bug fix */
+  -webkit-transform: translateX(-100%); /* Browser bug fix */
+  transform: translateX(-100%); 
+ }
+}
+
+
+
+
+#but{
+  
+    z-index: 999;
+    position: relative;
+    color: #fff;
+    height: 70vh;
+    width: 96.5%;  
+    overflow-y: scroll;
+    font-size: 1.5rem;
+}
+
+
+
+
+@media (max-width:375px) {
+
+  .scroll-left {
+font-size: 2rem;
+}
+   #but{
+        width: 98%;
+        font-size: 1rem;
+        margin: 5% 2.5%;
+        height: 70vh;
+
+    }
+
+
+    
+}
+@media (max-width:425px) {
+
+  .scroll-left {
+        font-size: 2rem;
+    }
+   #but{
+        width: 98%;
+        font-size: 1rem;
+        margin: 5% 2.5%;
+        height: 70vh;
+
+
+    }
+
+
+    
+}
+
+
+
+
+/*---------------Scroll-------*/
+.weswap-current
+{
+  display:inline-block;
+  height:200px;
+  margin:10px 40px;
+  padding:5px;
+  overflow:hidden;
+  overflow-y:scroll;
+  width:200px;
+}
+
+.weswap-current::-webkit-scrollbar {
+  width: 7px;
+}
+ 
+.weswap-current::-webkit-scrollbar-track {
+  
+  border-radius: 10px;
+}
+ 
+.weswap-current::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:#ffc72e;
+}
+
