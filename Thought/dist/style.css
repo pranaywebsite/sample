@@ -22,7 +22,7 @@ canvas {
   color: #fff;
   width:40%;
   left: 30%;
-  top:15vh;
+  top:10vh;
   font-size: 4rem;
   z-index: 99999;
 }
@@ -59,11 +59,17 @@ canvas {
 }
 
 
-
-
-#but{ margin: 10% auto; z-index: 999; position: relative; padding-left: 10%;
-height: 70vh; overflow-y: scroll; margin-right: 5%; align-items: center;
-width: 99.5%; }
+#but{ 
+  margin: 5% auto; 
+  z-index: 999; 
+  position: relative; 
+  padding-left: 10%;
+height: 80vh; 
+overflow-y: scroll; 
+margin-right: 5%; 
+align-items: center;
+width: 99.5%; 
+}
     
 a.button {
 
@@ -73,7 +79,7 @@ a.button {
   margin: 2.5%;
   color:#fff;
   text-align:center;
-  font-size:24px;
+  font-size:1rem;
   cursor: pointer;
   text-decoration: none;
   padding:1.5rem;
@@ -107,6 +113,8 @@ a.button:hover {
   filter: alpha(opacity=70);
   -moz-opacity:0.7;
   -khtml-opacity: 0.7;
+   border-bottom: 0px solid rgba(0,0,0,0.5);
+   border-top: 3px solid rgba(0,0,0,0.5);
 }
 /*---------------Scroll-------*/
 .weswap-current
@@ -134,14 +142,62 @@ a.button:hover {
   background-color:#ffc72e;
 }
 
+@media (max-width:425px) {
+
+  .scroll-left {
+font-size: 2rem;
+  width:60%;
+  left:20%;
+  top:7vh;
+  height: 18vh;
+  margin-bottom: 7vh;
+}
+    #but{
+        margin: 2.5% 0% 2.5% 6%;
+        height: 70vh;
+        width: 93.5%;  
+        overflow-y: scroll;
+        align-items: center;
+    }
+ a.button{
+
+  width: 85%;
+  display: block;
+  color:#fff;
+  text-align:center;
+  font-size:1rem;
+  cursor: pointer;
+  text-decoration: none;
+  padding:.5rem;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-bottom: 3px solid rgba(0,0,0,0.5);
+  border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+}
+.weswap-current
+{
+  display:inline-block;
+  height:200px;
+  margin:10px 20px;
+  padding:5px;
+  }
+}
 
 @media (max-width:375px) {
+   .scroll-left {
+font-size: 2rem;
+  width:60%;
+  left:20%;
+  top:7vh;
+  height: 18vh;
+  margin-bottom: 7vh;
+}
     #but{
-        margin: 2.5%;
+        margin: 2.5% 0% 2.5% 6%;
         height: 70vh;
-        width: 95%;  
+        width: 93.8%;  
         overflow-y: scroll;
-        margin-right: 5%;
         align-items: center;
     }
  a.button{
@@ -158,42 +214,19 @@ a.button:hover {
   border-radius: 2rem;
   -moz-border-radius: 2rem;
   -webkit-border-radius: 2rem;
-
+}
+.weswap-current
+{
+  display:inline-block;
+  height:20px;
+  margin:10px 10px;
+  padding:5px;
+ }
 
 }
 }
-@media (max-width:425px) {
-
-  .scroll-left {
-        font-size: 2rem;
-    }
-   #but{
-        align-items: center;
-        margin-left: 8%;
-        height: 70vh;
-        width: 98%;  
-        overflow-y: scroll;
-        align-items: center;
-    }
- a.button{
-  width: 70%;
-  display: block;
-  color:#fff;
-  text-align:center;
-  font-size:1rem;
-  cursor: pointer;
-  text-decoration: none;
-  padding:.5rem;
-  border: 1px solid rgba(0,0,0,0.5);
-  border-bottom: 3px solid rgba(0,0,0,0.5);
-  border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -webkit-border-radius: 2rem;
 
 
+@media (max-width:770px) {
 }
-
-    
 }
-
-
