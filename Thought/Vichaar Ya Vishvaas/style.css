@@ -17,12 +17,12 @@ canvas {
 
 .scroll-left {
   overflow: hidden;
-  height: 30vh; 
+  height: 25vh; 
   position: relative;
   color: #fff;
   width:40%;
   left: 30%;
-  top:15vh;
+  top:10vh;
   font-size: 3.5rem;
   z-index: 99999;
 }
@@ -32,9 +32,9 @@ canvas {
   margin: 0;
   text-align: left;
   /* Apply animation to this element */ 
-  -moz-animation: scroll-left 50s linear infinite;
-  -webkit-animation: scroll-left 50s linear infinite;
-  animation: scroll-left 50s linear infinite;
+  -moz-animation: scroll-left 60s linear infinite;
+  -webkit-animation: scroll-left 60s linear infinite;
+  animation: scroll-left 60s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
@@ -73,7 +73,25 @@ canvas {
 }
 
 
+@media (max-width:425px) {
 
+  .scroll-left {
+        font-size: 2rem;
+        width: 70%;
+        left: 15%
+    }
+   #but{
+        width: 97.5%;
+        font-size: 1rem;
+        margin: 5% 2.5%;
+        height: 70vh;
+
+
+    }
+
+
+    
+}
 
 @media (max-width:375px) {
 
@@ -91,23 +109,7 @@ font-size: 2rem;
 
     
 }
-@media (max-width:425px) {
 
-  .scroll-left {
-        font-size: 2rem;
-    }
-   #but{
-        width: 98%;
-        font-size: 1rem;
-        margin: 5% 2.5%;
-        height: 70vh;
-
-
-    }
-
-
-    
-}
 
 
 

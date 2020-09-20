@@ -178,3 +178,28 @@ entities.push(new Terrain({displacement : 120, scrollDelay : 50, fillStyle : "rg
       requestAnimationFrame(animate);
   }
   animate();
+
+
+
+
+
+
+  //----------------------Audio-------------//
+  const button = document.querySelector("#butto");
+const icon = document.querySelector("#butto > i");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
