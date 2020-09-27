@@ -14,22 +14,21 @@
       z-index: 9;
     }
 
-
     .scroll-left {
       overflow: hidden;
-      height: 25vh; 
+      height: 20vh; 
       position: relative;
       color: #fff;
       width:40%;
       left: 30%;
-      top:10vh;
+      top: -10vh;
       font-size: 3.5rem;
       z-index: 99999;
     }
     .scroll-left p {
-      position: absolute;
+      position: relative;
       white-space:nowrap;
-      margin: 0;
+     
       text-align: left;
       /* Apply animation to this element */ 
       -moz-animation: scroll-left 60s linear infinite;
@@ -58,14 +57,12 @@
       }
     }
 
-
-
-
     #but{
 
       z-index: 999;
       position: relative;
       color: #fff;
+      top: -25vh;
       height: 70vh;
       width: 96.5%;  
       overflow-y: scroll;
@@ -121,8 +118,8 @@
       color: #f00;
       top: 10rem;
       position: relative;
-      top: -33.5vh;
-      left: 180vh;
+      top: -30vh;
+      left: 90%;
       
     }
 
@@ -131,11 +128,11 @@
       z-index: 999999999;
       color: #fff;
       background: transparent;
-      position: absolute;
+      position: relative;
       text-align:center;
       font-size: 2rem;
       cursor: pointer;
-      padding:.2rem 1rem;
+      padding:.2rem .8rem;
       border: 1px solid rgba(0,0,0,0.5);
       border-bottom: 3px solid rgba(0,0,0,0.5);
       border-radius: 2rem;
@@ -179,8 +176,8 @@
       z-index: 999;
       color: #f00;
       position: relative;
-      top: -31.5vh;
-      left: 63%;
+      top: -13rem;
+      left: 78%;
 
     }
     .ed{
@@ -209,8 +206,8 @@
       z-index: 999;
       color: #f00;
       position: relative;
-      top: -30.5vh;
-      left: 62%;
+      top: -11.3rem;
+      left: 78%;
 
     }
     .ed{
@@ -301,10 +298,10 @@
   }
 
   .scroll-left {
-    font-size: 2rem;
-    width:60%;
-    left:20%;
-    top:7vh;
+     font-size: 1.8rem;
+    width:70%;
+    left:15%;
+    top:2vh;
     height: 18vh;
     margin-bottom: 7vh;
   }
@@ -313,8 +310,10 @@
     margin: 2.5% 0% 2.5% 6%;
     height: 70vh;
     width: 93.5%;  
+    top: -18vh;
     overflow-y: scroll;
     align-items: center;
+    font-size: 1.2rem;
   }
   a.button{
 
@@ -345,10 +344,10 @@
 
   }
   .scroll-left {
-    font-size: 2rem;
-    width:60%;
-    left:20%;
-    top:7vh;
+    font-size: 1.8rem;
+    width:70%;
+    left:15%;
+    top:2vh;
     height: 18vh;
     margin-bottom: 7vh;
   }
@@ -356,8 +355,10 @@
     margin: 2.5% 0% 2.5% 6%;
     height: 70vh;
     width: 93.8%;  
+    top: -18vh;
     overflow-y: scroll;
     align-items: center;
+    font-size: 1.2rem;
   }
   a.button{
     width: 80%;
