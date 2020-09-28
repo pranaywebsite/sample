@@ -31,9 +31,9 @@
 
           text-align: left;
           /* Apply animation to this element */ 
-          -moz-animation: scroll-left 60s linear infinite;
-          -webkit-animation: scroll-left 60s linear infinite;
-          animation: scroll-left 60s linear infinite;
+          -moz-animation: scroll-left 50s linear infinite;
+          -webkit-animation: scroll-left 50s linear infinite;
+          animation: scroll-left 50s linear infinite;
         }
         /* Move it (define the animation) */
         @-moz-keyframes scroll-left {
@@ -123,12 +123,12 @@
           z-index: 999;
           color: #f00;
           position: relative;
-          margin-top: 3vh;
-             left: -3vh;
-        
-          
-        }
-
+          margin-top: 3.1vh;
+          left: -3vh;
+       }
+.content{
+  padding: 0px 12px;
+}
 
         /*----------------Language  button design-----------*/
         button.button {
@@ -139,7 +139,7 @@
           text-align:center;
           font-size: 2rem;
           cursor: pointer;
-          padding:.2rem .8rem;
+          padding:.2  rem .8rem;
           border: 1px solid rgba(0,0,0,0.5);
           border-bottom: 3px solid rgba(0,0,0,0.5);
           border-radius: 2rem;
@@ -185,7 +185,7 @@
         color: #fff;
         background: transparent;
         position: relative;
-        top: 3vh;
+        top: 2.8vh;
         left: 3vh;
         font-size: 2rem;
         padding: 10px 15px;
@@ -237,8 +237,8 @@
     /*---------------------- 425  media quary for audio button and scrool left-----*/ 
     @media (max-width:425px) {
       #butto{
-        font-size: 1.2rem;
-        padding: 8px 12px;
+        font-size: 1rem;
+        padding: 4px 8px;
       }
 
       .scroll-left {
@@ -307,7 +307,7 @@
   @media (max-width:375px) {
     #butto{
       font-size: 1rem;
-      padding: 5px 10px;
+      padding: 4px 8px;
 
     }
     .scroll-left {
