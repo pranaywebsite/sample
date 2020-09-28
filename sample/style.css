@@ -124,6 +124,7 @@
           color: #f00;
           position: relative;
           margin-top: 3vh;
+             left: -3vh;
         
           
         }
@@ -305,7 +306,7 @@
 
   @media (max-width:375px) {
     #butto{
-      font-size: 1.2rem;
+      font-size: 1rem;
       padding: 5px 10px;
 
     }
