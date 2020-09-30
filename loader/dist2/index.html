@@ -1,0 +1,278 @@
+
+
+        <!DOCTYPE html>
+        <html lang="en" >
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">  <!--ham -->
+          <meta content="width=device-width, initial-scale=1.0" name="viewport">
+          <title>Vichaar Ya Vishvaas</title>
+          <link rel="stylesheet" href="./style.css">
+          <!-- CSS only -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+          <!-- JS, Popper.js, and jQuery -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFT GAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+          <!-----------audio---------->
+          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+        </head>
+        <body>
+          <div class="preloader-wrapper" style="Z-index:999999999999999;"id="preloader-wrapper">
+  <div class="percentage-wrapper">
+    <div class="loadbar-percent"></div>
+    <div id="percent"></div>
+  </div>
+  <div class="preloader-box">
+    <span class="preloader-text">Welcome to</span>
+    <div class="preloader-title">My Thoughts</div>
+  </div>
+</div>
+          <div class="flex-contianer">
+          <div class="aud">
+           <audio src="Pranay_Creativity.mp3" id="aud" loop="TRUE"></audio>
+           <button id="butto" class="butto">
+            <i class="fa fa-volume-up " aria-hidden="true"></i>
+          </button>
+        </div>
+           <div id="eee" style="margin-top: 3vh;" >
+
+      <button class="map-point-sm en eng button" id="en" data-show=".english">
+        <div class="content">
+          <div  class="ed">
+            <p>English</p>
+          </div>
+        </div>
+      </button>
+      <button class="map-point-sm hi button" id="hi" data-show=".hindi">
+        <div class="content">
+          <div>
+            <p  class="hd">Hindi</p>
+          </div>
+        </div>
+      </button>
+
+    </div><!-- end inner basic -->
+</div>
+        <!-- partial:index.partial.html -->
+        <canvas id="bgCanvas"></canvas>
+        <!-- partial -->
+        <div class="scroll-left">
+         <p>Vichaar Ya Vishvaas &nbsp &nbsp &nbsp विचार या विश्वास &nbsp &nbsp &nbsp Vichaar Ya Vishvaas &nbsp &nbsp &nbsp विचार या विश्वास &nbsp &nbsp &nbsp Vichaar Ya Vishvaas &nbsp &nbsp &nbsp विचार या विश्वास</p>
+       </div>
+
+     </div>
+  
+    <div>
+
+      <div class="initialmsg">
+        <div id="but" class="weswap-current">
+          <p style="text-align:center;">
+            Kabhi Kabhi to main apne aap per Has padta hu<br>
+            Itna gyan prapt kar liya fir bhi<br>
+            pathar ki murti samne hath jod kar khada hu<br>
+            Kabhi Kabhi to main apne aap per has padta hu.<br>
+          </p>
+          <p style="text-align:center;">
+            Sau chuhe to humne bhi mare,<br>
+            namak dalkar bhi humne khae par<br>
+            jab haj per pahunche tab pata Chala<br>
+            ki vah sab to viarth tha.<br>
+          </p>
+          <p style="text-align:center;">
+            Dharm aur Bhakt ki kya yah dosti badi aanokhi hai<br>
+            buddhu pahla wala banata hai,<br>
+            dusre wala samjhata hai ki buddhu kaise banaa hai.<br>
+            Tu jise maine dekha nahin bus khali teri batay hi suni hay,<br>
+            to ab tu hi bata k tuj par kesay visvas Kar Lu<br>
+            par tu bataee ga bhi kesay.<br>
+          </p>
+          <p style="text-align:center;">
+            Kabhi Kabhi to main yah sochta hu<br>
+            ki agar tu na hota to kya hota ?<br>
+            Agar tu hay us Ka bhram na hota to yah pakshpath na hota,<br>
+            tu alag mein alag aisa mahsus na hota,<br>
+            insan insan ke barabar hota.<br>
+            Maine suna hai ki har Kan mein hai tu<br>
+            To tere liye ye ghar banane ki itni jid kyon?<br>
+            To kya tu nahin chahta use jagah per ek bhavya vidyalay bane?<br>
+          </p>
+          <p style="text-align:center;">
+            Kuch dost to mere aise bhi hai ki jab ab dharm<br>
+            per vivad hota hai tu yah sunana nahin bhulate<br>
+            ki unhone yah dharm granth pada hai<br>
+            aur sathi sath yah bhi nahin bolate<br>
+            ke tu bhi yah dharm granth pad.<br>
+            Agar dharm granth padhne ke baad ahankar aata ho<br>
+            to vah granth na pado to behtar hai.<br>
+          </p>
+          <p style="text-align:center;">
+            Vishvaas ki kai paribhashaye hai Jaise<br>
+            Shaniwar ko chana, tel aur chappal<br>
+            Na khaya, lagaya aur kharida jata hai.<br>
+            Or jab poochho k kyon?<br>
+            To uttar aisa milta hai jis per vishvaas nahin hota.<br>
+          </p>
+          <p style="text-align:center;">
+            Vishvaas karo to prashn nahin,<br>
+            aur prashn Karo to tumko vishvaas nahin,<br>
+            yah kaisi andhvishwasi mayajaal hai<br>
+            jismein ek ke liye suraj nila hi, to dusre ke liye hara hi<br>
+            Aur teesra aankhen kholne ko taiyar nahin<br>
+            kyunki use ine donon per <b> VISHVAAS NAHIN.</b>
+
+          </p>
+          <p style="text-align:right; padding-right:  8%;">
+            - Pranay Patel<br>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="english hide">
+       <div id="but" class="weswap-current">
+        <p style="text-align:center;">
+          Kabhi Kabhi to main apne aap per Has padta hu<br>
+          Itna gyan prapt kar liya fir bhi<br>
+          pathar ki murti samne hath jod kar khada hu<br>
+          Kabhi Kabhi to main apne aap per has padta hu.<br>
+        </p>
+        <p style="text-align:center;">
+          Sau chuhe to humne bhi mare,<br>
+          namak dalkar bhi humne khae par<br>
+          jab haj per pahunche tab pata Chala<br>
+          ki vah sab to viarth tha.<br>
+        </p>
+        <p style="text-align:center;">
+          Dharm aur Bhakt ki kya yah dosti badi aanokhi hai<br>
+          buddhu pahla wala banata hai,<br>
+          dusre wala samjhata hai ki buddhu kaise banaa hai.<br>
+          Tu jise maine dekha nahin bus khali teri batay hi suni hay,<br>
+          to ab tu hi bata k tuj par kesay visvas Kar Lu<br>
+          par tu bataee ga bhi kesay.<br>
+        </p>
+        <p style="text-align:center;">
+          Kabhi Kabhi to main yah sochta hu<br>
+          ki agar tu na hota to kya hota ?<br>
+          Agar tu hay us Ka bhram na hota to yah pakshpath na hota,<br>
+          tu alag mein alag aisa mahsus na hota,<br>
+          insan insan ke barabar hota.<br>
+          Maine suna hai ki har Kan mein hai tu<br>
+          To tere liye ye ghar banane ki itni jid kyon?<br>
+          To kya tu nahin chahta use jagah per ek bhavya vidyalay bane?<br>
+        </p>
+        <p style="text-align:center;">
+          Kuch dost to mere aise bhi hai ki jab ab dharm<br>
+          per vivad hota hai tu yah sunana nahin bhulate<br>
+          ki unhone yah dharm granth pada hai<br>
+          aur sathi sath yah bhi nahin bolate<br>
+          ke tu bhi yah dharm granth pad.<br>
+          Agar dharm granth padhne ke baad ahankar aata ho<br>
+          to vah granth na pado to behtar hai.<br>
+        </p>
+        <p style="text-align:center;">
+          Vishvaas ki kai paribhashaye hai Jaise<br>
+          Shaniwar ko chana, tel aur chappal<br>
+          Na khaya, lagaya aur kharida jata hai.<br>
+          Or jab poochho k kyon?<br>
+          To uttar aisa milta hai jis per vishvaas nahin hota.<br>
+        </p>
+        <p style="text-align:center;">
+          Vishvaas karo to prashn nahin,<br>
+          aur prashn Karo to tumko vishvaas nahin,<br>
+          yah kaisi andhvishwasi mayajaal hai<br>
+          jismein ek ke liye suraj nila hi,<br>
+          to dusre ke liye hara hi<br>
+          Aur teesra aankhen kholne ko taiyar nahin<br>
+          kyunki use ine donon per <b> VISHVAAS NAHIN.</b>
+          
+        </p>
+        <p style="text-align:right; padding-right:  8%;">
+          - Pranay Patel<br>
+        </p>
+
+      </div>
+
+    </div>
+    <div class="hindi hide">
+      <div id="but" class="weswap-current">
+        <p style="text-align:center;">
+          कभी-कभी तो मैं अपने आप पर हंस पढ़ता हूं।<br>
+          इतना ज्ञान प्राप्त कर लिया फिर भी पत्थर की मूर्ति के<br>
+          सामने हाथ जोड़कर खड़ा हूं।<br>
+          कभी-कभी तो मैं अपने आप पर हंस पढ़ता हूं।<br>
+
+
+        </p>
+        <p style="text-align:center;">
+          सौ चूहे तो हमने भी मारे<br>
+          नमक डालकर भी हमने खाए<br>
+          पर जब हज पर पहुंचे तब पता चला<br> 
+          कि वह सब तो व्यर्थ था।<br>
+          
+        </p>
+        <p style="text-align:center;">
+          धर्म और भक्तों की यह दोस्ती बड़ी अनोखी है।<br>
+          बुद्धू पहले वाला बनाता है,<br>
+          दूसरे वाला समझाता है बुद्धू कैसे बनना है।<br>
+          तू जिसे मैंने देखा नहीं बस खाली तेरी बातें ही सुनी है<br>
+          तो अब तू ही बता कि तुझ पर कैसे विश्वास कर लूं<br>
+          पर तू बताएगा भी कैसे।<br>
+        </p>
+        <p style="text-align:center;">
+          कभी-कभी तो मैं यह सोचता हूं कि<br>
+          अगर तू ना होता तो क्या होता?<br>
+          अगर तू है उसका भ्रम ना होता तो <br>
+          यह पक्षपात ना होता तू अलग मैं अलग ऐसा महसूस ना होता<br>
+          इंसान इंसान के बराबर होता।<br>
+          मैंने सुना है कि हर कण में है तू<br>
+          तू तेरे लिए घर बनाने की इतनी जिद क्यों<br>
+          तू क्या नहीं चाहता कि <br>
+          उस जगह एक भव्य विद्यालय बने ?<br>
+        </p>
+        <p style="text-align:center;">
+          
+          कुछ मित्र तो मेरे ऐसे भी है कि जब धर्म पर वाद विवाद<br>
+          होता है तो यह सुनाना नहीं भूलते कि उन्होंने यह धर्म ग्रंथ <br>
+          पड़ा है और साथ ही साथ यह भी नहीं बोलते<br>
+          के तु भी यह धर्म ग्रंथ पढ़। <br>
+          अगर कोई धर्म ग्रंथ पढ़ने के बाद अहंकार आता हो <br>
+          तो वह ग्रंथ ना ही पढ़ो तो बेहतर है।<br>
+
+        </p>
+        <p style="text-align:center;">
+          विश्वास की कई परिभाषाएं है जैसे<br>
+          शनिवार को चना, तेल, और चप्पल<br>
+          ना खाया, लगाया और खरीदा जाता है।<br>
+          और जब पूछूं के क्यों तो<br>
+          उत्तर ऐसा मिलता है जिस पर विश्वास नहीं होता।<br>
+        </p>
+        <p style="text-align:center;">
+         विश्वास करो तो प्रश्न नहीं, और प्रश्न करो <br>
+         तो तुमको विश्वास नहीं <br>
+         यह कैसा अंधविश्वासी मायाजाल है, <br>
+         जिसमें एक के लिए सूरज नीला है,<br>
+         तो दूसरे के लिए हरा है,<br> 
+         तीसरा आंखें खोलने को तैयार नहीं क्योंकि<br> 
+         उसे इन दोनों पर <b>विश्वास नहीं।</b>
+       </p>
+       <p style="text-align:right; padding-right:  8%;">
+        -प्रणय पटेल<br>
+      </p>
+
+    </div>
+  </div>
+
+
+
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
