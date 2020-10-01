@@ -31,7 +31,7 @@ $(document).on('click', '.map-point-sm', function() {
     $('button.hi').removeClass('hin');
 
   //different audio switch
-   document.getElementById("aud").src = "Be_The_One.mp3";
+   document.getElementById("aud").src = "eng.mp3";
 
   });
   $('button.hi').on('click',function () {
@@ -39,7 +39,7 @@ $(document).on('click', '.map-point-sm', function() {
    $('button.hi').addClass('hin');  
   //different audio switch
 
-    document.getElementById("aud").src = "Pranay_Creativity.mp3";
+    document.getElementById("aud").src = "hin.mp3";
 
  });
 });
