@@ -50,7 +50,7 @@ $(function(){
           curDir = 'up';
           if(curDir != prevDir){
           $('.navbar-custom').stop();
-          $('.navbar-custom').animate({ bottom: '0px' }, 300);
+          $('.navbar-custom').animate({ bottom: '1px' }, 300);
           prevDir = curDir;
           }
       }
@@ -76,7 +76,7 @@ $(function(){
           curDir = 'up';
           if(curDir != prevDir){
           $('.my').stop();
-          $('.my').animate({ bottom: '0px' }, 300);
+          $('.my').animate({ bottom: '1px' }, 300);
           prevDir = curDir;
           }
       }
