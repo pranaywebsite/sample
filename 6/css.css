@@ -382,7 +382,7 @@
         .card-carousel {
 
     --card-width: 80%;
-    --card-max-width:25rem;
+    --card-max-width:35rem;
     --carousel-min-width: 300px;
     --card-height: 200px;
 
