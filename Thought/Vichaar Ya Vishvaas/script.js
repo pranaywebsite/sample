@@ -18,7 +18,8 @@ $(window).load(function() {
 
 
 
- //----------------------Audio-------------//
+
+  //----------------------Audio-------------//
   const button = document.querySelector("#butto");
   const icon = document.querySelector("#butto > i");
   const audio = document.querySelector("audio");
@@ -64,7 +65,6 @@ $(document).on('click', '.map-point-sm', function() {
 
  });
 });
-
 
 (function () {
   var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
