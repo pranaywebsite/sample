@@ -18,8 +18,29 @@ $(window).load(function() {
 
 
 
+ //----------------------Audio-------------//
+  const button = document.querySelector("#butto");
+  const icon = document.querySelector("#butto > i");
+  const audio = document.querySelector("audio");
 
-  //----------------------Audio-------------//
+  button.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.volume = 0.2;
+      audio.play();
+      icon.classList.remove('fa-volume-up');
+      icon.classList.add('fa-volume-mute');
+
+
+    } else {
+      audio.pause();
+      icon.classList.remove('fa-volume-mute');
+      icon.classList.add('fa-volume-up');
+    }
+    button.classList.add("fade");
+  });
+//------------------------------------//
+
+
 
 $(document).on('click', '.map-point-sm', function() {
   var show = $(this).data('show');
@@ -44,32 +65,6 @@ $(document).on('click', '.map-point-sm', function() {
  });
 });
 
-//------------------------------------//
-
-
-
-$(document).on('click', '.map-point-sm', function() {
-  var show = $(this).data('show');
-  $(show).removeClass("hide").siblings().addClass("hide");  
-
-
-  $('button.en').on('click',function () {
-    $('button.en').addClass('eng'); 
-    $('button.hi').removeClass('hin');
-
-  //different audio switch
-   //document.getElementById("aud").src = "Be_The_One.mp3";
-
-  });
-  $('button.hi').on('click',function () {
-   $('button.en').removeClass('eng');
-   $('button.hi').addClass('hin');  
-  //different audio switch
-
-    //document.getElementById("aud").src = "Pranay_Creativity.mp3";
-
- });
-});
 
 (function () {
   var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
