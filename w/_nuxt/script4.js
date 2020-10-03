@@ -1070,7 +1070,7 @@
 						staticClass: ""
 					}, [n("div", {
 						staticClass: ""
-					}, [n("svg", {
+					}, [n("", {
 						attrs: {
 							
 						}
@@ -1078,8 +1078,8 @@
 						attrs: {
 							d: ""
 						}
-					})]), t._v(" "), n("div", {
-						staticClass: "title"
+					})]), t._v(" "), n("", {
+						staticClass: ""
 					}, [t._v(t._s(t.message))]), t._v(" "), 404 === t.statusCode ? n("p", {
 						staticClass: "description"
 					}, [n("NuxtLink", {

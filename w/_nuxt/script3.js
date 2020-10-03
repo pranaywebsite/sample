@@ -3559,7 +3559,7 @@
 						return {
 							singleTag: [{
 								tag: "img",
-								attrs: r(t.attrs, ["src", "alt", "title"])
+								attrs: r(t.attrs, ["src", "alt", ""])
 							}]
 						}
 					},
