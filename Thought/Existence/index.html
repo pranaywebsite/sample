@@ -17,158 +17,105 @@
   <!-----------audio---------->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <style type="text/css">
+* {box-sizing: border-box;}
 
-    /* The Loader */
-    #loader-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      overflow: hidden;
-    }
-    .no-js #loader-wrapper {
-      display: none;
-    }
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(Montserrat-Thin.ttf);
+  }
+.hello{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 40%;
+    color:#FFEB3B;
+}
+.wellcome{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:#FFEB3B;
+}
 
-    #loader {
-      display: block;
-      position: relative;
-      left: 50%;
-      top: 50%;
-      width: 150px;
-      height: 150px;
-      margin: -75px 0 0 -75px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: #9370DB;
-      -webkit-animation: spin 1.7s linear infinite;
-      animation: spin 1.7s linear infinite;
-      z-index: 11;
-    }
-    #loader:before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: #BA55D3;
-      -webkit-animation: spin-reverse .6s linear infinite;
-      animation: spin-reverse .6s linear infinite;
-    }
-    #loader:after {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      right: 15px;
-      bottom: 15px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: #FF00FF;
-      -webkit-animation: spin 1s linear infinite;
-      animation: spin 1s linear infinite;
-    }
+body{
+    margin:0;
+    padding: 0;    
+}
+.preload{
+    width: 100%;
+    height: 100%;
+    background:#000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
-    @-webkit-keyframes spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-    @keyframes spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-    @-webkit-keyframes spin-reverse {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(-360deg);
-      }
-    }
-    @keyframes spin-reverse {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-      }
-    }
-    #loader-wrapper .loader-section {
-      position: fixed;
-      top: 0;
-      width: 51%;
-      height: 100%;
-      background: #000/*#222*/;
-      z-index: 10;
-    }
+}
 
-    #loader-wrapper .loader-section.section-left {
-      left: 0;
-    }
 
-    #loader-wrapper .loader-section.section-right {
-      right: 0;
-    }
+.loader-frame{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 15%;
+    position: relative;
+}
+@media and (max-width:425px)
+{
+  .loader-frame{
+    margin-top: 50%;
 
-    /* Loaded styles */
-    .loaded #loader-wrapper .loader-section.section-left {
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
+  }
+}
+.circle{
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background-color: white 0%;
+  border: 1px solid #f00;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-    .loaded #loader-wrapper .loader-section.section-right {
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
+.loader1{
+    position: absolute;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border-top: 5px solid   #f00;
+    border-bottom: 5px solid #f00;
+    animation: clockwisespin 5s linear 3;
+}
 
-    .loaded #loader {
-      opacity: 0;
-      -webkit-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
-    }
+@keyframes clockwisespin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
 
-    .loaded #loader-wrapper {
-      visibility: hidden;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      -webkit-transition: all 0.3s 1s ease-out;
-      transition: all 0.3s 1s ease-out;
-    }
+
+@keyframes fadeout{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
 
   </style>
   <link rel="stylesheet" href="../basestyle.css">
 
 </head>
-<body>
-  <!-- PRELOADER -->
-  <div id="loader-wrapper" style="z-index:999999999999999;">
-    <div id="loader"></div>
-    
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-    
-  </div>
+ <body onload="myFunction()">
+          <div class="preload" id="preload" style="Z-index:999999999999999;">
+        <div class="logo">
+        </div>
+        <div class="loader-frame">
+            <div class="loader1" id="loader1">
+            </div>
+            <div class="circle"></div>
+            <h1 class="hello" >Loading...</h1>
+        </div>
+    </div>
   <!-- END PRELOADER -->
   <div class="flex-contianer" >
     <div class="aud">
@@ -268,14 +215,24 @@ the front door to<br>
 
 <!-----------preloader script----->
 <script type="text/javascript">
-  $(document).ready(function() {
+ var myVar;
 
-    // Fakes the loading setting a timeout
-    setTimeout(function() {
-      $('body').addClass('loaded');
-    }, 2000);
+function myFunction(){
+    myVar = setTimeout(hiding, 2000);
+    myVar = setTimeout(showPage,3000);
+}
 
-  });
+function showPage(){
+    document.getElementById("preload").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
+
+function hiding(){
+    document.getElementById("preload").style.animation = "fadeout 1s ease";
+    document.getElementById("myDiv").style.animation = "fadein 1s ease";
+}
+
+
 </script>
 </body>
 </html>
