@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  <!--ham -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>The Elephant Rope</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFT GAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-----------audio---------->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+
+  <style type="text/css">
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      transition: opacity .1s;
+      transition-delay: 3s;
+    }
+    .preloader.is-loaded {
+      pointer-events: none;
+      background: rgba(0, 0, 0, 0);
+      opacity: 0;
+    }
+
+    .pl-line {
+      position: absolute;
+      width: 1px;
+      height: 150%;
+      background: black;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(20deg);
+      transition: opacity 1s ease-out;
+    }
+    .is-loaded .pl-line {
+      opacity: 0;
+    }
+    .pl-line > div {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+      animation: pulse 2s infinite;
+      will-change: transform;
+      animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    .pl-l, .pl-r {
+      position: absolute;
+      top: 0;
+      width: 70%;
+      height: 100%;
+      transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      will-change: transform;
+      background: black;
+    }
+
+    .pl-l {
+      left: -20%;
+      transform: skew(-20deg);
+    }
+    .is-loaded .pl-l {
+      transform: translateX(-100%) skew(-20deg);
+    }
+
+    .pl-r {
+      right: -20%;
+      transform: skew(-20deg);
+    }
+    .is-loaded .pl-r {
+      transform: translateX(100%) skew(-20deg);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    }
+
+  </style>
+  <!--------------preloader end--------->
+  <link rel="stylesheet" href="../basestyle.css">
+
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div class="preloader" style="z-index:9999999999999999;">
+    <div class="pl-l"></div>
+    <div class="pl-r"></div>
+    <div class="pl-line">
+      <div></div>
+    </div>
+  </div>
+  <!-- /PRELOADER -->
+  <div class="flex-contianer">
+    <div class="aud">
+      <audio src="../eng.mp3" id="aud" loop="TRUE"></audio>
+      <button id="butto" class="butto">
+        <i class="fa fa-volume-up " aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="eee"  >
+
+      <button class="map-point-sm en eng button" id="en" data-show=".english">
+        <div class="content">
+          <div  class="ed">
+            <p>English</p>
+          </div>
+        </div>
+      </button>
+      <button class="map-point-sm hi button" id="hi" data-show=".hindi">
+        <div class="content">
+          <div>
+            <p  class="hd">Hindi</p>
+          </div>
+        </div>
+      </button>
+
+    </div><!-- end inner basic -->
+  </div>
+  <!-- partial:index.partial.html -->
+  <canvas id="bgCanvas"></canvas>
+  <!-- partial -->
+  <div class="scroll-left">
+    <p>The Elephant Rope &nbsp &nbsp &nbsp हाथी की रस्सी &nbsp &nbsp &nbsp The Elephant Rope &nbsp &nbsp &nbsp हाथी की रस्सी &nbsp &nbsp &nbsp The Elephant Rope &nbsp &nbsp &nbsp हाथी की रस्सी &nbsp &nbsp &nbsp The Elephant Rope &nbsp &nbsp &nbsp हाथी की रस्सी &nbsp &nbsp &nbsp The Elephant Rope &nbsp &nbsp &nbsp हाथी की रस्सी &nbsp &nbsp &nbsp</p>
+  </div>
+
+</div>
+
+<div>
+
+  <div class="initialmsg">
+    <div id="but" class="weswap-current">
+      <p style="text-align:center;">
+        Mai paida ho sakta tha use maa ki kokh say<br>
+        ya fir us maa ki kokh say<br>
+        lekin hua is man ki kokh say<br>
+        jiske pati ka naam ye tha.<br>
+
+      </p>
+      <p style="text-align:center;">
+        Mujhe kisi ne pucha nahi<br>
+        na jaane ki kisi ne koshish ki<br>
+        bus bol diya ki tu ye dharma ka hay<br>
+        or yha teri jaati hai.<br>
+
+      </p>
+      <p style="text-align:center;">
+        Parjab bade hokar main nay<br>
+        in zanjiro ko todna chaha to jana ki<br>
+        mere apne hi vo zanjeer bane baithe the.<br>
+
+      </p>
+      <p style="text-align:center;">
+        Jab vivas hokar mein chhat pataya<br>
+        to paya ki vah hati ki rassi<br>
+        jo zanjeer bane baithi thi vo tut gai.<br>
+        Or  tab samajh mein aaya ki<br>
+        us hathi ki rassi ki koi galti nahi thi<br>
+        vah to bus meri pariksha thi.<br>
+
+      </p>
+      <p style="text-align:center;">
+        <b>Mein paida ho gaya us man ki kokh say<br>
+          jiska pati ka naam ye tha.<br></b>
+
+        </p>
+
+        <p style="text-align:right; padding-right:  8%;">
+          - Pranay Patel<br>
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="english hide">
+      <div id="but" class="weswap-current">
+        <p style="text-align:center;">
+          Mai paida ho sakta tha use maa ki kokh say<br>
+          ya fir us maa ki kokh say<br>
+          lekin hua is man ki kokh say<br>
+          jiske pati ka naam ye tha.<br>
+
+        </p>
+        <p style="text-align:center;">
+          Mujhe kisi ne pucha nahi<br>
+          na jaane ki kisi ne koshish ki<br>
+          bus bol diya ki tu ye dharma ka hay<br>
+          or yha teri jaati hai.<br>
+
+        </p>
+        <p style="text-align:center;">
+          Parjab bade hokar main nay<br>
+          in zanjiro ko todna chaha to jana ki<br>
+          mere apne hi vo zanjeer bane baithe the.<br>
+
+        </p>
+        <p style="text-align:center;">
+          Jab vivas hokar mein chhat pataya<br>
+          to paya ki vah hati ki rassi<br>
+          jo zanjeer bane baithi thi vo tut gai.<br>
+          Or  tab samajh mein aaya ki<br>
+          us hathi ki rassi ki koi galti nahi thi<br>
+          vah to bus meri pariksha thi.<br>
+
+        </p>
+        <p style="text-align:center;">
+          <b>Mein paida ho gaya us man ki kokh say<br>
+            jiska pati ka naam ye tha.<br></b>
+
+          </p>
+          <p style="text-align:right; padding-right:  8%;">
+            - Pranay Patel<br>
+          </p>
+
+        </div>
+
+      </div>
+      <div class="hindi hide">
+        <div id="but" class="weswap-current">
+          <p style="text-align:center;">
+            मैं पैदा हो सकता था उस मां की कोख से<br>
+            या फिर उस मां की कोख से<br>
+            लेकिन हुआ इस मां की कोख से<br>
+            जिसके पति का नाम यह था।<br>
+
+
+
+          </p>
+          <p style="text-align:center;">
+            मुझे किसी ने पूछा नहीं<br>
+            ना किसी ने जानने की कोशिश की<br>
+            बस बोल दिया कि तू यह धर्म का है<br>
+            और यह तेरी जाती है।<br>
+
+          </p>
+          <p style="text-align:center;">
+            पर जब बड़े होकर मैंने<br>
+            इन जंजीरों को तोड़<br>
+            ना चाहा तो जाना कि<br>
+            मेरे अपने ही व जंजीर बने बैठे थे।<br>
+
+          </p>
+          <p style="text-align:center;">
+            जब विवश होकर मैं छठ पटाया<br>
+            तो पाया कि वह हाथी की रस्सी<br>
+            जो जंजीर बने बैठी थी<br>
+            वह टूट गई और तब<br>
+            समझ में आया कि उस हाथी की रस्सी<br>
+            की कोई गलती नहीं थी<br>
+            वह तो बस मेरी परीक्षा थी।<br>
+
+          </p>
+          <p style="text-align:center;">
+
+            <b>मैं पैदा हो गया उस मां की कोख से<br>
+            जिसके पति का नाम यह था।</b><br>
+
+
+          </p>
+          <p style="text-align:right; padding-right:  8%;">
+            -प्रणय पटेल<br>
+          </p>
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+    <!------Preloader----------->
+    <script type="text/javascript">
+      var _d = document,
+      _p = _d.querySelector('.preloader');
+
+      console.log(_p)
+
+      setTimeout(function(){
+        _p.classList.add('is-loaded')
+      }, 3000)
+
+
+    </script>
+    <script  src="../basescript.js"></script>
+
+  </body>
+  </html>

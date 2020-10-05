@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  <!--ham -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Existence</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFT GAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-----------audio---------->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <style type="text/css">
+
+    /* The Loader */
+    #loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      overflow: hidden;
+    }
+    .no-js #loader-wrapper {
+      display: none;
+    }
+
+    #loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #9370DB;
+      -webkit-animation: spin 1.7s linear infinite;
+      animation: spin 1.7s linear infinite;
+      z-index: 11;
+    }
+    #loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #BA55D3;
+      -webkit-animation: spin-reverse .6s linear infinite;
+      animation: spin-reverse .6s linear infinite;
+    }
+    #loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #FF00FF;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes spin-reverse {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(-360deg);
+      }
+    }
+    @keyframes spin-reverse {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
+    #loader-wrapper .loader-section {
+      position: fixed;
+      top: 0;
+      width: 51%;
+      height: 100%;
+      background: #000/*#222*/;
+      z-index: 10;
+    }
+
+    #loader-wrapper .loader-section.section-left {
+      left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+      right: 0;
+    }
+
+    /* Loaded styles */
+    .loaded #loader-wrapper .loader-section.section-left {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .loaded #loader {
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+
+    .loaded #loader-wrapper {
+      visibility: hidden;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      -webkit-transition: all 0.3s 1s ease-out;
+      transition: all 0.3s 1s ease-out;
+    }
+
+  </style>
+  <link rel="stylesheet" href="../basestyle.css">
+
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="loader-wrapper" style="z-index:999999999999999;">
+    <div id="loader"></div>
+    
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    
+  </div>
+  <!-- END PRELOADER -->
+  <div class="flex-contianer" >
+    <div class="aud">
+      <audio src="../eng.mp3" id="aud" loop="TRUE"></audio>
+      <button id="butto" class="butto">
+        <i class="fa fa-volume-up " aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="eee" style="display: none;" >
+
+      <button class="map-point-sm en eng button" id="en" data-show=".english">
+        <div class="content">
+          <div  class="ed">
+            <p>English</p>
+          </div>
+        </div>
+      </button>
+      <button class="map-point-sm hi button" id="hi" data-show=".hindi">
+        <div class="content">
+          <div>
+            <p  class="hd">Hindi</p>
+          </div>
+        </div>
+      </button>
+
+    </div><!-- end inner basic -->
+  </div>
+  <!-- partial:index.partial.html -->
+  <canvas id="bgCanvas"></canvas>
+  <!-- partial -->
+  <div class="scroll-left">
+    <p>EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp EXISTENCE &nbsp &nbsp &nbsp</p>
+  </div>
+
+</div>
+
+<div>
+
+  <div class="initialmsg">
+    <div id="but" class="weswap-current">
+     <p style="text-align:center;">
+From the point source through <br>
+the big bang we came to<br> 
+existence.<br>
+
+
+    </p>
+    <p style="text-align:center;">
+    The best outcome of the big bang <br>
+as well as the best of evolution <br>
+on the planet earth, we capable <br>
+of referring ourselves as homo sapiens <br>
+knowing that one-day entropy will decay.<br>
+
+
+   </p>
+   <p style="text-align:center;">
+   And so far the only species able <br>
+to predict that after some time <br>
+<b>Messier 87</b> <br>
+and other of its kind will be at<br>
+the front door to<br>
+<b>END OF TIME.</b>
+
+
+  </p>
+
+ <p style="text-align:right; padding-right:  8%;">
+  - Pranay Patel<br>
+</p>
+
+
+</div>
+
+</div>
+
+<div class="english hide">
+  <div id="but" class="weswap-current">
+
+  </div>
+
+</div>
+<div class="hindi hide">
+  <div id="but" class="weswap-current">
+
+    <!-------hindi not used-------->
+  </div>
+</div>
+
+
+
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script  src="../basescript.js"></script>
+
+<!-----------preloader script----->
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    // Fakes the loading setting a timeout
+    setTimeout(function() {
+      $('body').addClass('loaded');
+    }, 2000);
+
+  });
+</script>
+</body>
+</html>
