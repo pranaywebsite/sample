@@ -50,7 +50,6 @@ body{
 
 }
 
-
 .loader-frame{
     width: 250px;
     height: 250px;
@@ -58,13 +57,7 @@ body{
     margin-top: 15%;
     position: relative;
 }
-@media and (max-width:425px)
-{
-  .loader-frame{
-    margin-top: 50%;
 
-  }
-}
 .circle{
   position: absolute;
   height: 250px;
@@ -84,7 +77,20 @@ body{
     border-bottom: 5px solid #f00;
     animation: clockwisespin 5s linear 3;
 }
+@media screen and (max-width: 420px) {
+  
+   
+  .loader-frame{
+    margin-top: 30%;
 
+  }
+  
+.hello{
+  margin-top: 30vh;
+  padding-bottom: 50%;
+  }
+  
+}
 @keyframes clockwisespin{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
@@ -106,7 +112,7 @@ body{
 
 </head>
  <body onload="myFunction()">
-          <div class="preload" id="preload" style="Z-index:999999999999999;">
+          <div class="preload" id="preload" style="z-index:999999999999999;">
         <div class="logo">
         </div>
         <div class="loader-frame">
