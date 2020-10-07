@@ -1250,7 +1250,7 @@
 					props: [],
 					data: function () {
 						return {
-							wordsRaw: ["Welcome —", "Out of Chaos Emerges Order —", "Simplicity —", "Hyperactive —", "Order —", "html —", "css —", "javascript —", "Strong —", "Interactive —", "Creative —", "Pranay 2020 —", "Culture —", " Nothing But Only Truth—", "Curious —", "Satyalekhan Writer —", "Pranay.N.Patel —"],
+							wordsRaw: ["Welcome —", "Out of Chaos Emerges Order —", "Simplicity —", "Hyperactive —", "Order —", "html —", "css —", "javascript —", "Strong —", "Interactive —", "Creative —", " Nothing But Only Truth—", "Curious —", "Satyalekhan Writer —", "Pranay.N.Patel —"],
 							words: null,
 							done: !1
 						}

@@ -85,7 +85,7 @@
       width: calc((100vw - 552px)/ 24*8 + 192px);
       -webkit-transform: translate(-55%, -45%);
       transform: translate(-55%, -45%);
-      left: 25%;
+      left: 27.5%;
       opacity: .34;
 
        
@@ -95,6 +95,7 @@
       .i-bg-pic {
         width: calc((100vw - 132px)/ 12*8 + 96px);
         top:10rem;
+        margin-left: 1.5%;
       }
     }
 .intropr{
