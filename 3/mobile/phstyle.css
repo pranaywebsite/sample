@@ -1,0 +1,50 @@
+
+
+body {
+      margin: 0
+}
+
+
+
+
+html {
+      font-family: Untitled-Sans_Regular, Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-size: 25px;
+      line-height: 28px;
+      color: #d8d8d8;
+      color: var(--main-color);
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      touch-action: manipulation
+}
+
+
+
+body {
+      -webkit-overflow-scrolling: touch;
+      overflow-y: auto;
+}
+
+body,
+html {
+      position: relative;
+      overflow-x: hidden;
+}
+
+
+img {
+      max-width: 100%;
+      vertical-align: middle;
+      display: block;
+}
+
+
+
+
+
+
+

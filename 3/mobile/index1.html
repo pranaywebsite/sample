@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">  <!--ham -->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css" src="phstyles.css"></style>
+	<style type="text/css">
+
+		.i-subtext {
+			font-family: Untitled-Sans_Regular, Helvetica, Arial, sans-serif;
+			font-style: normal;
+			color: #9c9ea5;
+			color: var(--sec-color);
+			position: relative;
+			display: -webkit-box;
+			display: flex;
+			line-height: 2em;
+			left: calc((100vw - 552px)/ 24*3 + 72px);
+			width: calc((100vw - 552px)/ 24*16 + 432px)
+		}
+
+		@media (max-width:1024px) {
+			.i-subtext {
+				font-size: 18px;
+				line-height: 1.7em
+			}
+		}
+
+		@media (max-width:768px) {
+			.i-subtext {
+				left: calc((100vw - 132px)/ 12*1);
+				width: calc((100vw - 132px)/ 12*10 + 132px)
+			}
+		}
+
+		@media (max-width:767px) {
+			.i-subtext {
+				flex-wrap: wrap
+			}
+		}
+
+		.i-text-left {
+			position: relative;
+			display: inline-block;
+			left: 0;
+			vertical-align: top;
+			width: calc((100vw - 552px)/ 24*8 + 168px)
+		}
+
+		@media (max-width:768px) {
+			.i-text-left {
+				width: calc((100vw - 132px)/ 12*4 + 36px)
+			}
+		}
+
+		@media (max-width:767px) {
+			.i-text-left {
+				width: calc((100vw - 132px)/ 12*10 + 132px)
+			}
+		}
+
+		.i-text-right {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			padding-top: 10px;
+			top: -10px;
+			left: calc((100vw - 552px)/ 24*2 + 72px);
+			width: calc((100vw - 552px)/ 24*8 + 168px)
+		}
+
+		@media (max-width:768px) {
+			.i-text-right {
+				width: calc((100vw - 132px)/ 12*4 + 36px)
+			}
+		}
+
+		@media (max-width:767px) {
+			.i-text-right {
+				margin-top: 20px;
+				left: 0;
+				width: calc((100vw - 132px)/ 12*10 + 132px)
+			}
+		}
+
+		.i-bg-pic {
+			position: absolute;
+			width: calc((100vw - 552px)/ 24*8 + 192px);
+			-webkit-transform: translate(-55%, -45%);
+			transform: translate(-55%, -45%);
+			left: 25%;
+			opacity: .34;
+			 
+		}
+
+		@media (max-width:767px) {
+			.i-bg-pic {
+				width: calc((100vw - 132px)/ 12*8 + 96px)
+			}
+		}
+
+		@media(max-width: 765px) {
+			.i-bg-pic {
+				left: 10%;
+			}
+		}
+	</style>
+</head>
+<body style="width: 100vw; overflow-x: hidden;">
+
+	<section style="background-color: #000;color: #9c9ea5; height: 150vh;">
+  <h1 class="i-hl rellax " data-rellax-speed="0.5" style="margin-left: 5%; margin-top: -5px;padding-top: 20px;">Portfolio —</h1> 
+  <div class="i-sub-hl rellax" data-rellax-speed="1" style="margin-left: 5% ;color:#ff0">Introduction</div> 
+  <div class="i-subtext" >
+    <img src="introPranay.png" alt="Andrew Leguay" class="i-bg-pic rellax " data-rellax-speed="-5" >
+    <p class="i-text-left rellax " data-rellax-speed="1.75" >My name is Pranay Patel; I am a curious petroleum engineering student currently in the fourth year of B.Tech at Pandit Deendayal Petroleum University and currently, I am serving as Chief Operating Officer at FIPI PDPU Students Chapter where we bridge the gap between industry and academia by organizing highly interactive events for the students at PDPU to share, acquire and harvest their knowledge. </p> 
+    <p class="i-text-right" >And I aspire to work in the energy sector especially in the field which would allow me to meet new people, letting me know their culture, and inspire me to work hard for the betterment of the society.<br>
+    one more thing here is a link to Satyalekhan another website that I built for the satirical poems which I love to write.</p>
+
+  </div>
+
+</section>
+	
+		<script src="rellax.min.js"></script>
+		<script type="text/javascript">
+			var rellax = new Rellax('.rellax', {
+				center: true
+			});
+			var rellaxNonCentered = new Rellax('.rellax-non-centered', {
+				center: false
+			});
+		</script>
+	</body>
+	</html>
