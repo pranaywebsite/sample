@@ -710,13 +710,16 @@ body{
     box-shadow: 15px 15px 18px #b9b9b9, -15px -15px 18px #ebebeb;
   }
   }
- @media (max-width: 374px) {
+@media (max-width: 374px) {
     #press-icons{
       padding: .7rem;
       margin-top: 30px;
       margin-left: 5px;
       margin-right: 5px;
     }
+    .media{
+          font-size: 2.2rem;
+      }
   }
   /* ---------icons end-------*/
 
