@@ -1,0 +1,150 @@
+*[data-element-type="container"],
+*[data-element-type="dropdown"],
+*[data-element-type="dropdown"] > *,
+*[data-element-type="image"],
+*[data-element-type="input"] {
+  /* treat padding as part of width */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*[data-element-type="container"],
+*[data-element-type="section"] {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+*[data-element-type="section"] > * > *,
+*[data-element-type="dropdown"],
+*[data-element-type="container"] > * {
+  max-width: 100%;
+}
+
+*[data-element-type="text"],
+*[data-element-type="link"],
+*[data-element-type="button"],
+*[data-element-type="input"] {
+  font-family: arial;
+}
+
+/* CONTAINER */
+
+*[data-element-type="container"] {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+*[data-element-type="container"] > *:last-child {
+  margin-right: "0 !important";
+}
+
+/* SECTION */
+
+*[data-element-type="section"] {
+  display: flex;
+  width: 100%;
+}
+
+*[data-element-type="section"] > * {
+  position: static;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* INPUT */
+
+*[data-element-type="input"] {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  /* removes unwanted inner shadow on mobile */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* IMAGE */
+
+*[data-element-type="image"] {
+  line-height: 0;
+  overflow: hidden;
+}
+
+*[data-element-type="image"] > * {
+  max-width: 100%;
+}
+
+/* TEXT */
+
+*[data-element-type="text"] {
+  height: auto;
+  word-break: break-word;
+}
+
+/* BUTTON */
+
+*[data-element-type="button"] {
+  padding: 0;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+*[data-element-type="button"]:focus,
+*[data-element-type="button"].focus {
+  outline: none;
+}
+
+*[data-element-type="button"]:active,
+*[data-element-type="button"].active {
+  color: inherit; /* webkit */
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* DROPDOWN */
+
+*[data-element-type="dropdown"] {
+  display: none;
+  position: absolute;
+}
+
+*[data-element-type="dropdown"] > * {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+*[data-element-type="dropdown"] *[data-element-type="link"] {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+*[data-element-type="link"],
+*[data-element-type="link"]:visited,
+*[data-element-type="link"]:hover,
+*[data-element-type="link"]:active {
+  color: inherit;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
