@@ -839,7 +839,7 @@ body{
   /*-----------------------------------------footer--------------------*/
   .footer-distributed {
     
-    background: #dcdcdc url(2gif.gif);
+    background: #dcdcdc url(./2gif.gif);
     background-repeat: no-repeat;
     background-position:79% ;
     height:280px;
