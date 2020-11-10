@@ -3,9 +3,9 @@
   text-align:center;
   color: #fff;
   margin-top: 0;
-  padding-top: 20px;
   position: absolute;
-  top:10%;
+  top:5%;
+
   left: 0;
   right: 0;
   color: #FFF;
@@ -23,7 +23,7 @@
   flex-flow:row wrap;
   justify-content:space-around;
   align-items:flex-start;
-  margin:10rem auto; 
+  margin:15rem auto; 
 }
 
  #certificaton .grid{
@@ -42,6 +42,24 @@
     height: 421.41px !important;
   }
 @media(min-width:1023px){
+  #black{
+    top:10%;
+  }
+  #certification .grid{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+  align-items:flex-start;
+  margin:10rem auto; 
+}
+
+ #certificaton .grid{
+  padding:0;
+  margin-top: 4rem;
+  max-width:90%;
+  list-style:none; 
+  margin-top:10px;
+}
 #certification .grid li{
     max-width:420px;
   }
