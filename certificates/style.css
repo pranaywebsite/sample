@@ -17,6 +17,7 @@
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 #certification .grid{
   display:flex;
@@ -34,12 +35,17 @@
   margin-top:10px;
 }
 #certification .grid li{
+  align-items: center;
   margin:20px;
   max-width:700px;
   list-style-type: none;
   }
   .hig{
     height: 421.41px !important;
+  }
+
+  ul.grid{
+    padding: 0px;
   }
 @media(min-width:1023px){
   #black{
@@ -78,6 +84,7 @@
 
 li.center-text {
   text-align: center;
+
 }
 
 .center-text {
