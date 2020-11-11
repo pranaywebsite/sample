@@ -1,49 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:wght@900&display=swap');
 
 
-h6 {
-  font-size:2rem;
-  font-family: 'Nunito', sans-serif;
-  position: relative;
+.certi {
+  
+  
+  justify-content: center;
   text-transform: uppercase;
-  color:#000;
-
-}
-h6:before{
-  text-decoration: none;
-  content: attr(data-text);
-  position: relative;
-  z-index: -1;
-  font-size: 2.5rem;
   background: linear-gradient(45deg,#ff0,#0f0,#f00,#00f,#0f0);
-  -webkit-background-clip: text; 
-  color: transparent;
-  margin:0;
-  left:15%;
-  top:-2rem;
-
-}
-h6:after{
-  top:-2rem;
-  left:15%;
-  content: attr(data-text);
-  position: absolute;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
-  z-index: -2;
-  background: linear-gradient(45deg,#ff0,#0f0,#f00,#00f,#0f0);
-  -webkit-background-clip: text; 
-  filter: blur(10px);
-  color: transparent;
+  font-weight: 1000;  
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  margin-top:0rem; 
 }
 
 
 @media screen and (min-width: 425px) {
 
-  h6:before{
+  .certi{
+    top:0rem;
+    left: 40%;
+    margin-top:15vh; 
+     
+  }
+  .certi:before{
     top:0rem;
     left: 40%;
   }
-h6:after{
+.certi:after{
   top:0rem;
   left:40%;
   }
