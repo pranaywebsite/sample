@@ -1,0 +1,63 @@
+#container-id-5- { position: absolute; margin: unset; min-height: 16px; top: 329px;
+  width: 100%; left: 0px; background-color: rgb(0, 0, 0); }
+
+#ui-canvas { background-position: center center; background-color: rgb(0, 0, 0); }
+
+#container-id-0- { position: absolute; margin: unset; justify-content: center; min-height: 173px;
+  width: 100%; left: 0px; top: 148px; background-color: rgb(0, 0, 0); }
+
+#text-id-1- { margin: unset; background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; line-height: 180px; font-size: 160px; width: 912px; text-align: center; color: rgb(255, 255, 255); }
+
+#button-id-2- { position: absolute; margin: unset; border-style: solid; border-radius: 100px; padding: 0px 10px; border-width: 2px; background-color: rgb(255, 255, 255); color: rgb(255, 0, 0); border-color: rgb(0, 0, 0); font-weight: 700; font-style: normal; min-height: 58px; letter-spacing: 0px; line-height: 28.3334px; font-size: 25px;
+  width: 23.727272727272727%;
+  left: 38.13636363636363%; top: 447px; }
+
+#button-id-2-:hover, #button-id-2-.hover { color: rgb(255, 0, 0); background-color: rgb(0, 0, 0); }
+
+#button-id-2-:active, #button-id-2-.active { background-color: rgb(255, 0, 0) !important; color: rgb(0, 0, 0) !important; }
+
+#button-id-9-:active, #button-id-9-.active { color: rgb(0, 0, 0); }
+
+#button-id-9-:hover, #button-id-9-.hover { color: rgba(0, 0, 0, 0.5); }
+
+#button-id-9- { margin: unset; letter-spacing: 0px; line-height: 28.3334px; font-size: 25px; border-style: solid; border-radius: 100px; padding: 0px 10px; border-width: 2px; background-color: rgb(255, 255, 255); color: rgb(255, 0, 0); border-color: rgb(0, 0, 0); font-weight: 700; font-style: normal; width: 249px; min-height: 58px; left: 426px; top: 393px; position: absolute; }
+
+@media (min-width:1025px) {}
+
+@media (min-width:561px) and (max-width:1024px) {#button-id-9- { border-style: solid; border-radius: 100px; width: 236px; border-width: 2px; left: 266px; top: 429px; padding: 0px; }
+
+#container-id-5- { top: 295px;
+  width: 100%; left: 0px; }
+
+#text-id-1- { letter-spacing: 0px; line-height: 112.5px; font-size: 100px; }
+
+#button-id-2- { border-style: solid; border-radius: 100px;
+  width: 30.729166666666668%; border-width: 2px;
+  left: 34.63541666666667%; top: 429px; padding: 0px; }
+
+#container-id-0- { min-height: 118px; top: 178px;
+  width: 100%; left: 0px; }
+
+#button-id-2-:hover, #button-id-2-.hover { background-color: rgb(0, 0, 0); color: rgb(255, 0, 0); }
+
+#button-id-2-:active, #button-id-2-.active { color: rgb(0, 0, 0) !important; background-color: rgb(255, 0, 0) !important; }}
+
+@media (max-width:560px) {#button-id-2-:active, #button-id-2-.active { color: rgb(255, 255, 255) !important; }
+
+#container-id-0- { min-height: 44px;
+  width: 100%; left: 0px; top: 229px; }
+
+#button-id-2- { border-style: solid; border-radius: 100px; border-width: 2px;
+  width: 66.66666666666666%;
+  left: 16.666666666666664%; top: 505px; background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); }
+
+#text-id-1- { letter-spacing: 0px; line-height: 84.375px; font-size: 75px; }
+
+#container-id-5- {
+  width: 100%; min-height: 17px; left: 0px; top: 313px; }
+
+#button-id-9- { width: 228px; left: 74px; top: 473px; border-style: solid; border-radius: 100px; border-width: 2px; }
+
+#ui-canvas { background-size: auto; }
+
+#button-id-2-:hover, #button-id-2-.hover { color: rgb(255, 0, 0); background-color: rgb(0, 0, 0); }}

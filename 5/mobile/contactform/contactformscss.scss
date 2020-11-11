@@ -1,0 +1,22 @@
+$light: white;
+$mid: rgba(220, 220, 220, 1);
+$dark: rgba(100, 100, 100, 1);
+$off: rgba(190, 190, 190, 1);
+$green: #00dc69;
+$red: #fe5567;
+$white: rgba(245, 245, 245, 1);
+
+@mixin outer-shadow {
+  -webkit-box-shadow: 5px 5px 8px rgba(185, 185, 185, 1),
+             -5px -5px 8px rgba(235, 235, 235, 1);
+          box-shadow: 5px 5px 8px rgba(185, 185, 185, 1),
+             -5px -5px 8px rgba(235, 235, 235, 1); }
+@mixin focus-shadow {
+  -webkit-box-shadow: 5px 5px 8px rgba(165, 165, 165, 0),
+             -5px -5px 8px rgba(235, 235, 235, 0),
+              inset 5px 5px 8px rgba(165, 165, 165, 0.8),
+              inset -5px -5px 8px rgba(235, 235, 235, 0.8);
+          box-shadow: 5px 5px 8px rgba(165, 165, 165, 0),
+             -5px -5px 8px rgba(235, 235, 235, 0),
+              inset 5px 5px 8px rgba(165, 165, 165, 0.8),
+              inset -5px -5px 8px rgba(235, 235, 235, 0.8); }

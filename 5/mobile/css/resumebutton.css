@@ -1,0 +1,219 @@
+.downloadbtn{
+  position: relative;
+  display: inline-block;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 2rem;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align:  center;
+        -ms-flex-align:  center;
+            align-items:  center;
+    text-decoration: none;
+    margin:10% 17%;
+    padding: 1rem;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-shadow: 15px 15px 18px #b9b9b9, -15px -15px 18px #ebebeb;
+          box-shadow: 15px 15px 18px #b9b9b9, -15px -15px 18px #ebebeb;
+  
+}
+.downloadbtn :hover{
+  color:linear-gradient(270deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-box-shadow: 15px 15px 18px rgba(165, 165, 165, 0), -15px -15px 18px rgba(235, 235, 235, 0), inset 15px 15px 18px rgba(165, 165, 165, 0.8), inset -15px -15px 18px rgba(235, 235, 235, 0.8);
+            box-shadow: 15px 15px 18px rgba(165, 165, 165, 0), -15px -15px 18px rgba(235, 235, 235, 0), inset 15px 15px 18px rgba(165, 165, 165, 0.8), inset -15px -15px 18px rgba(235, 235, 235, 0.8);
+}
+ .downloadbtn span  {
+    position: absolute;
+    display: block;
+    width: 50%;
+    size: 2rem;
+     
+
+}
+ .downloadbtn span:nth-child(1){
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background: -webkit-gradient(linear, left top, right top, from(#ff0844), to(#ffb199));
+   background: -o-linear-gradient(left, #ff0844 0%, #ffb199 100%);
+   background: linear-gradient(90deg, #ff0844 0%, #ffb199 100%)
+
+}
+.downloadbtn:hover span:nth-child(1){
+  left:100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.downloadbtn span:nth-child(3){
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background: -webkit-gradient(linear, right top, left top, from(#b721ff), to(#21d4fd));
+   background: -o-linear-gradient(right, #b721ff 0%, #21d4fd 100%);
+   background: linear-gradient(270deg, #b721ff 0%, #21d4fd 100%);
+
+}
+.downloadbtn:hover span:nth-child(3){
+  right: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: .5s;
+       -o-transition-delay: .5s;
+          transition-delay: .5s;
+}
+.downloadbtn span:nth-child(2){
+   top: -100%;
+   right:0;
+   width: 2px;
+   height: 100%;
+   background: -webkit-gradient(linear, left top, left bottom, from(#0fd850), to(#f9f047));
+   background: -o-linear-gradient(top, #0fd850 0%, #f9f047 100%);
+   background: linear-gradient(180deg, #0fd850 0%, #f9f047 100%)
+
+}
+.downloadbtn:hover span:nth-child(2){
+  top: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: .25s;
+       -o-transition-delay: .25s;
+          transition-delay: .25s;
+}
+.downloadbtn span:nth-child(4){
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background: -webkit-gradient(linear, left bottom, left top, from(transparent),to(#2196f3));
+   background: -o-linear-gradient(bottom, transparent,#2196f3);
+   background: linear-gradient(360deg, transparent,#2196f3)
+
+}
+.downloadbtn:hover span:nth-child(4){
+  bottom:  100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: .75s;
+       -o-transition-delay: .75s;
+          transition-delay: .75s;
+}
+@media (min-width: 767px){
+    .downloadbtn{
+  position: relative;
+  display: inline-block;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 3rem;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:  center;
+        -ms-flex-align:  center;
+            align-items:  center;
+    text-decoration: none;
+    margin:10% 37%;
+    padding: 2rem;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-shadow: 15px 15px 18px #b9b9b9, -15px -15px 18px #ebebeb;
+          box-shadow: 15px 15px 18px #b9b9b9, -15px -15px 18px #ebebeb;
+  
+}
+}
+
+
+
+
+.shadow {
+  position: relative;
+  display: inline-block;
+ /*overflow: hidden;
+  border-radius: 4rem;*/
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 30rem;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align:  center;  
+  text-decoration: none;
+  margin:0% 17%;
+  padding: 1rem;
+  background: black;
+}
+.shadow:before,
+.shadow:after {
+  border-radius: 2px;
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: -o-linear-gradient(45deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000 ,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background: linear-gradient(45deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000 ,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  z-index: -1;
+    -webkit-animation: animate 20s linear infinite;
+            animation: animate 20s linear infinite; 
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.shadow:after {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
