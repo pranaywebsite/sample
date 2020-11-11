@@ -197,7 +197,7 @@ margin-top: -22%;
 }
 .skill-title{
       text-align: center;
-      margin: 10rem  0 2rem 0;
+      margin: 5rem  0 9rem 0;
       text-transform: uppercase;
 
   }
@@ -205,7 +205,7 @@ margin-top: -22%;
   @media screen and (max-width: 375px) {
   .skill-title{
      
-      margin: 8rem  0 2rem 0;
+      margin: 2rem  0 2rem 0;
 
   }
   }
