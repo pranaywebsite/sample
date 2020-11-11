@@ -36,6 +36,20 @@ h6:after{
   color: transparent;
 }
 
+
+@media screen and (min-width: 425px) {
+
+  h6:before{
+    top:0rem;
+    left: 40%;
+  }
+h6:after{
+  top:0rem;
+  left:40%;
+  }
+}
+
+
 .inside{
   position: relative;
   display: inline-block;
@@ -64,10 +78,10 @@ h6:after{
 
 .text-over-image{  
   color: #fff;
-  text-align: center;
-  
-  
+  text-align: center;  
 }
+
+
 /*-------------------preloader start---------------------------*/ 
 
 
